@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px; 
+}
+
+html{
+    scroll-behavior: smooth;    
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+li,
+nav,
+.grid-content{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    color: white;
+    margin-left: 10px;
+}
+
+h2{
+    margin: 20px 0px;
+    color: white;
+
+}
+
+p{
+    margin-bottom: 10px;
+    color: white;
+}
+
+h3{
+    color: white;
+    align-self: center;
+    margin-left: 10px;
+    font-size: small;
+}
+
+
+.container{
+    display: grid;
+    grid-template:    
+    "left-menu main" 1fr 
+    "footer footer" auto /
+     auto 1fr;
+     height: 100vh;
+     object-fit: cover;
+     /* width: 100vw; */
+     border-radius: 10px;   
+}
+
+.center {    
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }  
+
+.left-menu{
+    display: grid;
+    grid-area: left-menu;    
+    background-color:#000000;
+    padding: 20px; 
+}
+
+.main{
+    display: grid;
+    grid-area: main;    
+    background-color:#141922 ;
+}
+
+.footer{
+    display: grid;
+    grid-area: footer;    
+    background-color: #282828;
+    height: 100px;
+    justify-content: center;
+}
+
+.main-logo{
+    margin-bottom: 30px;
+}
+
+.img{
+    height: 195px;
+    width: 195px;
+    object-fit: cover;   
+    opacity: 0.6;
+}
+
+.img:hover{    
+    opacity: 2;    
+}
+
+.main-main{    
+    padding-left: 10px;
+}
+
+.footer-img{
+    height: 50px; 
+    width: 50px;
+}
+
+.footer-center{
+    display: grid;
+    align-items: center;
+}
+
+.logo{
+    margin-bottom: 40px;
+}
+
+.icon{
+    filter: invert(1);
+    color: white;
+}
+
+.play-list-icon{
+    filter: brightness(0) invert(1);
+}
+
+.line{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+  margin: 10px 0px;
+  
+}
+
+.play{
+    font-size: small;
+    font-weight: bolder;
+}
+
+.three-row-grid{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.box{    
+    gap: 5px;
+}
+
+.bottom-album-img{
+    border-radius: 50%;
+}
+
+.playlist{
+    color: grey;
+    text-decoration: none;
+}
+
+.playlist:hover{
+    color: white;
+}
+
+.main-header{
+    display: grid;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+button{
+    padding: 10px; 
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    width: 150px;
+}
+
+.button{
+    margin: 20px;    
+}
+
+.upgrade-button{
+    color: white;
+    text-decoration: none;
+}
+
+.album{
+    display: grid;
+    justify-items: center;
+}
+
+.song-name-paragraph{
+    font-size: small;
+}
+
+.subtitle{
+    color: grey;
+}
+
+.subtitle:hover{
+    text-decoration: underline olivedrab;
+    color: white;
+}
+
+.radio-bar{
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    gap: 10px;
+}
+
+.footer-center-bar .radio-bar .progress-bar{
+    display: grid;
+    align-content: center;
+}
+
+.progress-bar .progress-bar-wrapper {
+    height: 5px;
+    border-radius: 5px;
+    background-color: #535353;
+    overflow: hidden;  
+}
+
+.progress-completion{
+    background-color: #bababa;
+    height: 100%;
+    width: 35%;
+    border: 1px solid;
+
+    transition: 3s;
+}
+
+.progress-bar:hover .progress-completion{
+    width: 90%;
+}
+
+.footer-hr{
+    height: 5px;
+    border: 1px solid #535353;
+}
